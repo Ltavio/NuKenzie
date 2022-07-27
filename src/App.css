@@ -1,0 +1,24 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  width: 100vw;
+  height: 100vh;
+}
+
+.main {
+  width: 100vw;
+  height: 80vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-money {
+  display: flex;
+  flex-direction: column;
+}

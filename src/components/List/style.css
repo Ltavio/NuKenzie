@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Nunito:wght@400;600;700;800&display=swap");
+/* font-family: 'Inter', sans-serif;
+font-family: 'Nunito', sans-serif; */
+
+.list-geral {
+  height: 500px;
+  margin: 39px 150px 0 0;
+
+  width: 560px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cabecalho-lista {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 560px;
+}
+
+.cabecalho-lista h3 {
+  font-family: "Nunito";
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.cabecalho-lista .btn-filters button {
+  margin-left: 16px;
+  padding: 10px;
+
+  background-color: #e9ecef;
+  border: 1.4px solid #e9ecef;
+  border-radius: 8px;
+
+  font-family: "Nunito", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: #343a40;
+
+  cursor: pointer;
+}
+
+.cabecalho-lista .btn-filters button:hover {
+  background-color: #fd377e;
+  color: #ffffff;
+}
+
+.container-cards {
+  margin-top: 24px;
+  height: 400px;
+  max-height: 400px;
+  width: 570px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+.card {
+  height: 87px;
+  min-height: 87px;
+  max-height: 87px;
+  width: 560px;
+
+  display: flex;
+  position: relative;
+
+  background-color: #f8f9fa;
+  border-radius: 4px;
+
+  margin-bottom: 32px;
+
+  cursor: pointer;
+}
+
+.card:hover {
+  background-color: #ffffff;
+  box-shadow: 0px 0px 22px -12px rgba(0, 0, 0, 0.25);
+}
+
+.card .identificadorEntrada {
+  background: #03b898;
+  width: 4px;
+  border-radius: 4px 0px 0px 4px;
+}
+
+.card .identificadorSaida {
+  background: #e9ecef;
+  width: 4px;
+  border-radius: 4px 0px 0px 4px;
+}
+
+.card .detalhes {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+
+.card .detalhes h2 {
+  font-family: "Nunito", sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  color: #212529;
+}
+
+.card .detalhes p {
+  margin: 0 0 25px;
+  font-family: "Nunito", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #343a40;
+}
+
+.card .valor-excluir {
+  height: 65px;
+  display: flex;
+  position: absolute;
+  right: 0;
+  align-items: center;
+}
+
+.card .valor-excluir h3 {
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #212529;
+}
+
+.card .valor-excluir button {
+  width: 24px;
+  height: 24px;
+  margin: 0 13px 0 53px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #e9ecef;
+  border-radius: 4px;
+  border: none;
+
+  cursor: pointer;
+}
+
+.lixeira {
+  width: 10px;
+}
+
+.card .valor-excluir button:hover {
+  background-color: #343a40;
+  color: #f8f9fa;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}

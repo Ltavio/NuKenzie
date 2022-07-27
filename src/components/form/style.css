@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Nunito:wght@400;600;700;800&display=swap");
+/* font-family: 'Inter', sans-serif;
+font-family: 'Nunito', sans-serif; */
+
+.formulario {
+  width: 363px;
+  height: 351px;
+  min-height: 351px;
+  margin-left: 150px;
+  margin-top: 39px;
+
+  display: flex;
+  justify-content: center;
+
+  background-color: #ffffff;
+  border: 1px solid #e9ecef;
+  border-radius: 4px;
+}
+
+.formulario form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 326px;
+  height: 351px;
+  padding-top: 35px;
+  position: relative;
+}
+
+form label {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #212529;
+
+  margin-bottom: 12px;
+}
+
+form .descricao {
+  padding: 16px;
+  width: 100%;
+  max-width: 294px;
+
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+
+  border: none;
+  border-radius: 8px;
+  background-color: #f8f9fa;
+}
+
+form .descricao:focus {
+  border: none;
+  outline: none;
+}
+
+form p {
+  margin-top: 5px;
+
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  color: #868e96;
+}
+
+.valor {
+  display: flex;
+  margin-top: 15px;
+  justify-content: space-between;
+}
+
+.valor .sec-valor input {
+  width: 112px;
+  height: 48px;
+  margin-top: 20px;
+
+  padding: 0 14px;
+
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+
+  border: none;
+  border-radius: 8px;
+  background-color: #f8f9fa;
+}
+
+.valor .sec-valor input:focus {
+  border: none;
+  outline: none;
+}
+
+/* tirar as setas do input number */
+.valor .sec-valor input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.valor .sec-tipoValor {
+  width: 160px;
+}
+
+.valor .sec-tipoValor .tipoValor {
+  width: 160px;
+  height: 48px;
+  margin-top: 20px;
+
+  overflow: hidden;
+  padding: 0 16px;
+
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  color: #343a40;
+
+  border: none;
+  border-radius: 8px;
+  background-color: #f8f9fa;
+
+  cursor: pointer;
+}
+
+.valor .sec-tipoValor .tipoValor:focus {
+}
+
+.valor .sec-tipoValor .tipoValor option {
+  height: 30px;
+  border: none;
+  padding-left: 17px;
+  padding-top: 12px;
+}
+
+.formulario form button {
+  height: 48px;
+  margin-top: 20px;
+
+  border-radius: 8px;
+  border: 2px solid #fd377e;
+
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  color: #ffffff;
+
+  background-color: #fd377e;
+
+  cursor: pointer;
+}
+
+.formulario form button:hover {
+  background-color: #e34981;
+}

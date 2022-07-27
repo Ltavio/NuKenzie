@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Nunito:wght@400;600;700;800&display=swap");
+/* font-family: 'Inter', sans-serif;
+font-family: 'Nunito', sans-serif; */
+
+.cabecalho {
+  width: 100vw;
+  height: 88px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background-color: #f8f9fa;
+  box-shadow: 0px 4px 32px -12px rgba(0, 0, 0, 0.25);
+}
+
+.cabecalho img {
+  margin-left: 150px;
+}
+
+.cabecalho button {
+  padding: 15px;
+  margin-right: 150px;
+
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+
+  border: 1.4px solid #e9ecef;
+  border-radius: 8px;
+  background-color: #e9ecef;
+
+  cursor: pointer;
+}
+
+.cabecalho button:hover {
+  color: #f8f9fa;
+  background-color: #343a40;
+}

@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Nunito:wght@400;600;700;800&display=swap");
+/* font-family: 'Inter', sans-serif;
+font-family: 'Nunito', sans-serif; */
+
+.container {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #212529;
+}
+
+.part-login {
+  width: 347px;
+  max-width: 347px;
+  margin-right: 50px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.part-login .logo {
+  width: 122.68px;
+  max-width: 122.68px;
+}
+
+.part-login h1 {
+  font-family: "Nunito", sans-serif;
+  font-size: 38px;
+  font-weight: 800;
+  color: #ffffff;
+}
+
+.part-login p {
+  font-family: "Nunito", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.part-login button {
+  width: 241px;
+  margin-top: 20px;
+  padding: 13px 20px;
+
+  border: 2px solid #fd377e;
+  border-radius: 8px;
+  background-color: #fd377e;
+
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.part-login button:hover {
+  background-color: #e34981;
+}
+
+.ilustracao .img-ilustracao {
+  width: 550px;
+}
