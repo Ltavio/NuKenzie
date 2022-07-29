@@ -8,6 +8,7 @@ font-family: 'Nunito', sans-serif; */
 
   width: 560px;
   display: flex;
+  position: relative;
   flex-direction: column;
   align-items: center;
 }
@@ -54,6 +55,7 @@ font-family: 'Nunito', sans-serif; */
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
 
   overflow: hidden;
   overflow-y: scroll;
@@ -76,18 +78,29 @@ font-family: 'Nunito', sans-serif; */
   cursor: pointer;
 }
 
+.noCard {
+  margin-bottom: 32px;
+  cursor: pointer;
+}
+
+.TitleNoCard {
+  margin-top: 0;
+  width: 100%;
+  font-size: 22px;
+}
+
 .card:hover {
   background-color: #ffffff;
   box-shadow: 0px 0px 22px -12px rgba(0, 0, 0, 0.25);
 }
 
-.card .identificadorEntrada {
+.card .entrada {
   background: #03b898;
   width: 4px;
   border-radius: 4px 0px 0px 4px;
 }
 
-.card .identificadorSaida {
+.card .despesa {
   background: #e9ecef;
   width: 4px;
   border-radius: 4px 0px 0px 4px;
@@ -156,4 +169,31 @@ font-family: 'Nunito', sans-serif; */
 
 ::-webkit-scrollbar {
   display: none;
+}
+
+@media only screen and (max-width: 400px) {
+  .list-geral {
+    margin: 0px;
+    width: 100%;
+    max-width: 100%;
+    border: 1px solid black;
+  }
+  .cabecalho-lista {
+    width: 100%;
+    max-width: 100%;
+  }
+  .container-cards {
+    width: 100%;
+    max-width: 100%;
+  }
+  .noCard {
+    margin-bottom: 32px;
+    cursor: pointer;
+  }
+
+  .TitleNoCard {
+    margin-top: 0;
+    width: 100%;
+    font-size: 22px;
+  }
 }

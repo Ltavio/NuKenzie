@@ -12,11 +12,10 @@ function App() {
   const [Login, setLogin] = useState(false);
   const [listTransactions, setListTransactions] = useState([]);
 
-  const [filtroEntrada, setFiltroEntrada] = useState([]);
-  const [filtroSaida, setFilterSaida] = useState([]);
+  const [filters, setFilters] = useState([]);
 
-  console.log("filtro de entrada", filtroEntrada);
-  console.log("filtro de saida", filtroSaida);
+  /* console.log("filtro de entrada", filtroEntrada);
+  console.log("filtro de saida", filtroSaida); */
   return (
     <div className="App">
       {Login ? (
@@ -27,15 +26,16 @@ function App() {
               <Form
                 listTransactions={listTransactions}
                 setListTransactions={setListTransactions}
-                setFiltroEntrada={setFiltroEntrada}
-                setFilterSaida={setFilterSaida}
+                filters={filters}
+                setFilters={setFilters}
               />
               <TotalMoney listTransactions={listTransactions} />
             </div>
             <List
               listTransactions={listTransactions}
-              filtroEntrada={filtroEntrada}
-              filtroSaida={filtroSaida}
+              setListTransactions={setListTransactions}
+              setFilters={setFilters}
+              filters={filters}
             />
           </div>
         </>

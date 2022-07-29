@@ -7,18 +7,50 @@ html {
 }
 
 .App {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
+  position: relative;
 }
 
 .main {
-  width: 100vw;
+  width: 100%;
   height: 80vh;
   display: flex;
+  position: relative;
   justify-content: space-between;
 }
 
 .form-money {
   display: flex;
   flex-direction: column;
+  position: relative;
+  width: 100%;
+}
+
+@media only screen and (max-width: 425px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 100%;
+  }
+  .App {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .main {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+  }
+
+  .form-money {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+  }
 }

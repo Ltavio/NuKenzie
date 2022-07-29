@@ -2,21 +2,40 @@ import "./style.css";
 import { useState } from "react";
 
 const Form = ({
+  filters,
+  setFilters,
   listTransactions,
   setListTransactions,
-  setFiltroEntrada,
-  setFilterSaida,
 }) => {
   const [description, setDescription] = useState("");
   const [valor, setValor] = useState(0);
   const [typeValue, setTypeValue] = useState("");
+
   const Transacoes = (event) => {
     event.preventDefault();
-    setListTransactions((oldCardList) => [
-      ...oldCardList,
-      { description, valor, typeValue },
-    ]);
+    if (typeValue === "despesa") {
+      if (filters.length > 0) {
+        const produto = { description, valor: valor * -1, typeValue };
+        setFilters((oldCardList) => [...oldCardList, produto]);
+      } else {
+        const produto = { description, valor: valor * -1, typeValue };
+        setListTransactions((oldCardList) => [...oldCardList, produto]);
+      }
+    } else {
+      if (filters.length > 0) {
+        setFilters((oldCardList) => [
+          ...oldCardList,
+          { description, valor, typeValue },
+        ]);
+      } else {
+        setListTransactions((oldCardList) => [
+          ...oldCardList,
+          { description, valor, typeValue },
+        ]);
+      }
+    }
   };
+
   return (
     <div className="formulario">
       <form onSubmit={Transacoes}>
@@ -38,7 +57,7 @@ const Form = ({
               name="valor"
               className="valor"
               placeholder="R$ Valor"
-              onChange={(event) => setValor(event.target.value)}
+              onChange={(event) => setValor(parseInt(event.target.value))}
             />
           </section>
           <section className="sec-tipoValor">
@@ -48,6 +67,7 @@ const Form = ({
               className="tipoValor"
               onChange={(event) => setTypeValue(event.target.value)}
             >
+              <option value="-">Escolher</option>
               <option value="entrada">Entrada</option>
               <option value="despesa">Despesa</option>
             </select>

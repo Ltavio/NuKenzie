@@ -36,3 +36,30 @@ font-family: 'Nunito', sans-serif; */
   color: #f8f9fa;
   background-color: #343a40;
 }
+
+@media only screen and (max-width: 400px) {
+  body,
+  html {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    width: 100vw;
+  }
+  .cabecalho {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
+  }
+
+  .cabecalho img {
+    margin: 0 0 0 15px;
+  }
+
+  .cabecalho button {
+    margin: 0 15px 0 0;
+  }
+}

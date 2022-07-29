@@ -45,3 +45,20 @@ font-family: 'Nunito', sans-serif; */
   font-size: 13px;
   color: #343a40;
 }
+
+@media only screen and (max-width: 400px) {
+  .container-money {
+    width: 90%;
+    border: 1px solid black;
+
+    margin-top: 5px;
+    margin-left: 0px;
+
+    display: flex;
+    justify-content: space-between;
+
+    background-color: #ffffff;
+    border: 1px solid #e9ecef;
+    border-radius: 4px;
+  }
+}

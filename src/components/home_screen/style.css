@@ -64,3 +64,39 @@ font-family: 'Nunito', sans-serif; */
 .ilustracao .img-ilustracao {
   width: 550px;
 }
+
+@media only screen and (max-width: 740px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .part-login {
+    width: 100%;
+    max-width: 100vw;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .part-login h1 {
+    text-align: center;
+    width: 80%;
+    font-size: 38px;
+  }
+
+  .container .ilustracao {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1032px) {
+  .container {
+    display: flex;
+    min-width: 110vw;
+    min-height: 110vh;
+  }
+  .part-login {
+    margin-left: 4%;
+  }
+}
